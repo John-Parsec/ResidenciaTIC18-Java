@@ -1,0 +1,34 @@
+
+1. O que é uma classe em Java e qual é a diferença entre uma classe e um
+objeto? Dê 5 exemplos mostrando-os em C++ e em Java.
+
+    R: Uma classe é um modelo que define um conjunto de atributos e métodos
+    comuns a um determinado grupo de objetos. Um objeto é uma instância de uma
+    classe. Um objeto é uma variável que armazena uma referência a um objeto
+    da classe. Em C++ uma classe é definida com a palavra reservada class e
+    em Java com a palavra reservada class. Em C++ um objeto é definido com a
+    palavra reservada new e em Java com a palavra reservada new.
+
+
+2. Como você declara uma variável em Java e quais são os tipos de dados
+primitivos mais comuns? Faça um paralelo entre isso e a mesma coisa na
+linguagem C++
+    R: Em Java uma variável é declarada com a palavra reservada var. Os tipos
+    de dados primitivos mais comuns são: int, float, double, char, boolean.
+    Em C++ uma variável é declarada com a palavra reservada auto. Os tipos
+    de dados primitivos mais comuns são: int, float, double, char, bool.
+
+
+3. Explique o conceito de herança em Java e como você pode criar uma
+subclasse a partir de uma classe existente. Faça um paralelo com C++,
+apresentando 5 exemplos.
+    R: Herança é um mecanismo que permite que uma classe herde atributos e
+    métodos de outra classe. Em Java uma subclasse é criada com a palavra
+    reservada extends. Em C++ uma subclasse é criada com a palavra reservada ': public'.
+
+
+4. Quando declaramos uma variável em Java, temos, na verdade, um ponteiro.
+Em C++ é diferente. Discorra sobre esse aspecto.
+    R: Em Java uma variável é um ponteiro que armazena uma referência a um
+    objeto. Em C++ uma variável é um ponteiro que armazena um endereço de
+    memória.
