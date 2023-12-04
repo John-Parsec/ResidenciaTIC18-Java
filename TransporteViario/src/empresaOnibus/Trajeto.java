@@ -4,18 +4,20 @@ import java.util.ArrayList;
 import java.util.Date;
 
 public class Trajeto {
-	ArrayList<Trecho> trechos;
-	Checkpoint pontoFinal;
-	Funcionario motorista;
-	Funcionario cobrador;
-	ArrayList<Date> dataHoraInicio;
-	ArrayList<Date> horaFim;
+	private ArrayList<Trecho> trechos;
+	private Checkpoint pontoFinal;
+	private Funcionario motorista;
+	private Funcionario cobrador;
+	private ArrayList<Date> dataHoraInicio;
+	private ArrayList<Date> horaFim;
+	private String tipoTrajeto; 		//Ida ou Volta
 	
 	public Trajeto() {
 		super();
 		this.trechos = new ArrayList<Trecho>();
 		this.dataHoraInicio = new ArrayList<Date>();
 		this.horaFim = new ArrayList<Date>();
+		this.tipoTrajeto = "Ida";
 	}
 	
 	public Trajeto(ArrayList<Trecho> trechos, Motorista motorista,Checkpoint pontoFinal ) {
@@ -25,6 +27,27 @@ public class Trajeto {
 		this.pontoFinal = pontoFinal;
 		this.dataHoraInicio = new ArrayList<Date>();
 		this.horaFim = new ArrayList<Date>();
+		this.tipoTrajeto = "Ida";
+	}
+	
+	public String getTipoTrajeto() {
+		return tipoTrajeto;
+	}
+
+	public void setTipoTrajeto(String tipoTrajeto) {
+		this.tipoTrajeto = tipoTrajeto;
+	}
+
+	public ArrayList<Trecho> getTrechos() {
+		return trechos;
+	}
+
+	public ArrayList<Date> getDataHoraInicio() {
+		return dataHoraInicio;
+	}
+
+	public ArrayList<Date> getHoraFim() {
+		return horaFim;
 	}
 
 	public void addPonto(Trecho p) {
@@ -62,9 +85,11 @@ public class Trajeto {
 	
 	public void registroInicio(Date dataHora) {
 		//regista a data e hora do inicio do trajeto
+		//seta o tipo de trajeto
 	}
 	
 	public void registrarFim() {
 		//registra a data e hora em que o veiculo chegou ao fim do trajeto.
+		//altera o tipo de trajeto
 	}
 }
