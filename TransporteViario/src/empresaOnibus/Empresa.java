@@ -99,6 +99,7 @@ public class Empresa {
 	public void cadastrarTrajeto() {
 		//Cadastra um trajeto
 		//Exibe os trechos disponiveis
+		//Após, exibe os pontos disponiveis no trajeto criado (para escolher qual será o checkpoint)
 		//Pega os dados do usuario e cria um trajeto
 	}
 	

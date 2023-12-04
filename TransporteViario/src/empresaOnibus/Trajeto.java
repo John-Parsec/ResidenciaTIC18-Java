@@ -11,10 +11,18 @@ public class Trajeto {
 	ArrayList<Date> dataHoraInicio;
 	ArrayList<Date> horaFim;
 	
-	public Trajeto(Funcionario motorista) {
+	public Trajeto() {
+		super();
+		this.trechos = new ArrayList<Trecho>();
+		this.dataHoraInicio = new ArrayList<Date>();
+		this.horaFim = new ArrayList<Date>();
+	}
+	
+	public Trajeto(ArrayList<Trecho> trechos, Motorista motorista,Checkpoint pontoFinal ) {
 		super();
 		this.motorista = motorista;
-		this.trechos = new ArrayList<Trecho>();
+		this.trechos = trechos;
+		this.pontoFinal = pontoFinal;
 		this.dataHoraInicio = new ArrayList<Date>();
 		this.horaFim = new ArrayList<Date>();
 	}
