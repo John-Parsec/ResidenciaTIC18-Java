@@ -76,6 +76,8 @@ public class Empresa {
 	}
 	public void menu() {
 		//Menu principal
+		//Cria uma interface visual para o usuario
+		//Chama os metodos necessarios dependendo da escolha do usuario
 	}
 	
 	public void cadastrarFuncionario() {
@@ -103,6 +105,11 @@ public class Empresa {
 		//Cadastra um trajeto
 		//Exibe os pontos disponiveis
 		//Pega os dados do usuario e cria um trecho
+	}
+	
+	public void cadastrarTrecho(PontoParada origem, PontoParada destino) {
+		//Cadastra um trajeto
+		//cria um trecho com os parametros recebidos
 	}
 	
 	public void cadastraPonto() {
