@@ -12,6 +12,7 @@ public class Empresa {
 	ArrayList<Trajeto> trajetos;
 	ArrayList<Trecho> trechos;
 	ArrayList<Jornada> jornadas;
+	ArrayList<PontoParada> pontos;
 	
 	public Empresa(String nome, String cnpj) {
 		super();
@@ -47,33 +48,40 @@ public class Empresa {
 	public ArrayList<Passageiro> getPassageiros() {
 		return passageiros;
 	}
-	public void addPassageiros(Passageiro passageiro) {
+	public void addPassageiro(Passageiro passageiro) {
 		this.passageiros.add(passageiro);
 	}
 	public ArrayList<Veiculo> getVeiculos() {
 		return veiculos;
 	}
-	public void addVeiculos(Veiculo veiculo) {
+	public void addVeiculo(Veiculo veiculo) {
 		this.veiculos.add(veiculo);
 	}
 	public ArrayList<Trajeto> getTrajetos() {
 		return trajetos;
 	}
-	public void addTrajetos(Trajeto trajeto) {
+	public void addTrajeto(Trajeto trajeto) {
 		this.trajetos.add(trajeto);
 	}
 	public ArrayList<Trecho> getTrechos() {
 		return trechos;
 	}
-	public void addTrechos(Trecho trecho) {
+	public void addTrecho(Trecho trecho) {
 		this.trechos.add(trecho);
 	}
 	public ArrayList<Jornada> getJornadas() {
 		return jornadas;
 	}
-	public void addJornadas(Jornada jornada) {
+	public void addJornada(Jornada jornada) {
 		this.jornadas.add(jornada);
 	}
+	public ArrayList<PontoParada> getPontos() {
+		return pontos;
+	}
+	public void addPonto(PontoParada ponto) {
+		this.pontos.add(ponto);
+	}
+
 	public void menu() {
 		//Menu principal
 		//Cria uma interface visual para o usuario
