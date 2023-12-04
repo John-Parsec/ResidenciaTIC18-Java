@@ -8,14 +8,12 @@ public class Trajeto {
 	Checkpoint pontoFinal;
 	Funcionario motorista;
 	Funcionario cobrador;
-	Veiculo onibus;
 	ArrayList<Date> dataHoraInicio;
 	ArrayList<Date> horaFim;
 	
-	public Trajeto(Funcionario motorista, Veiculo onibus) {
+	public Trajeto(Funcionario motorista) {
 		super();
 		this.motorista = motorista;
-		this.onibus = onibus;
 		this.trechos = new ArrayList<Trecho>();
 		this.dataHoraInicio = new ArrayList<Date>();
 		this.horaFim = new ArrayList<Date>();
@@ -52,14 +50,6 @@ public class Trajeto {
 
 	public void setCobrador(Funcionario cobrador) {
 		this.cobrador = cobrador;
-	}
-
-	public Veiculo getOnibus() {
-		return onibus;
-	}
-
-	public void setOnibus(Veiculo onibus) {
-		this.onibus = onibus;
 	}
 	
 	public void registroInicio(Date dataHora) {
