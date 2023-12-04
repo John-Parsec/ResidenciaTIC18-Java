@@ -99,10 +99,15 @@ public class Empresa {
 		//Pega os dados do usuario e cria um trajeto
 	}
 	
-	public void cadastrarTrecho(PontoParada origem, PontoParada destino) {
+	public void cadastrarTrecho() {
 		//Cadastra um trajeto
 		//Exibe os pontos disponiveis
 		//Pega os dados do usuario e cria um trecho
+	}
+	
+	public void cadastraPonto() {
+		//Cadastra um ponto
+		//Pega os dados do usuario e cria um ponto
 	}
 	
 	public void registroJornada(Trajeto t, Motorista m, Veiculo v) {
