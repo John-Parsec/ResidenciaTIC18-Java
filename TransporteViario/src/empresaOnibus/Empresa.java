@@ -24,6 +24,7 @@ public class Empresa {
 		this.trajetos = new ArrayList<Trajeto>();
 		this.trechos = new ArrayList<Trecho>();
 		this.jornadas = new ArrayList<Jornada>();
+		this.pontos = new ArrayList<PontoParada>();
 	}
 	
 	public String getNome() {
