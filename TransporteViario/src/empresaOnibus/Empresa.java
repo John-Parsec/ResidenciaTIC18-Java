@@ -77,6 +77,7 @@ public class Empresa {
 	public void menu() {
 		//Menu principal
 		//Cria uma interface visual para o usuario
+		//Exibe as informações necessarias e pega os dados necessarios do usuario
 		//Chama os metodos necessarios dependendo da escolha do usuario
 	}
 	
