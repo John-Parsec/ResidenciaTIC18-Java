@@ -11,7 +11,7 @@ public class Trajeto {
 	private ArrayList<Date> dataHoraInicio;
 	private ArrayList<Date> horaFim;
 	private String tipoTrajeto; 		//Ida ou Volta
-	private int intervalo;
+	private ArrayList<Integer> intervalos;
 	
 	public Trajeto() {
 		super();
@@ -29,7 +29,6 @@ public class Trajeto {
 		this.dataHoraInicio = new ArrayList<Date>();
 		this.horaFim = new ArrayList<Date>();
 		this.tipoTrajeto = "Ida";
-		this.setIntervalo(intervalo);
 	}
 	
 	public String getTipoTrajeto() {
@@ -85,12 +84,12 @@ public class Trajeto {
 		this.cobrador = cobrador;
 	}
 	
-	public int getIntervalo() {
-		return intervalo;
+	public ArrayList<Integer> getIntervalo() {
+		return intervalos;
 	}
 	
-	public void setIntervalo(int intervalo) {
-		this.intervalo = intervalo;
+	public void addIntervalo(int intervalo) {
+		this.intervalos.add(intervalo);
 	}
 
 	public void registroInicio(Date dataHora) {
