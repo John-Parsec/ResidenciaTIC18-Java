@@ -11,6 +11,7 @@ public class Trajeto {
 	private ArrayList<Date> dataHoraInicio;
 	private ArrayList<Date> horaFim;
 	private String tipoTrajeto; 		//Ida ou Volta
+	private int intervalo;
 	
 	public Trajeto() {
 		super();
@@ -20,7 +21,7 @@ public class Trajeto {
 		this.tipoTrajeto = "Ida";
 	}
 	
-	public Trajeto(ArrayList<Trecho> trechos, Motorista motorista,Checkpoint pontoFinal ) {
+	public Trajeto(ArrayList<Trecho> trechos, Motorista motorista,Checkpoint pontoFinal, int intervalo) {
 		super();
 		this.motorista = motorista;
 		this.trechos = trechos;
@@ -28,6 +29,7 @@ public class Trajeto {
 		this.dataHoraInicio = new ArrayList<Date>();
 		this.horaFim = new ArrayList<Date>();
 		this.tipoTrajeto = "Ida";
+		this.setIntervalo(intervalo);
 	}
 	
 	public String getTipoTrajeto() {
@@ -83,6 +85,14 @@ public class Trajeto {
 		this.cobrador = cobrador;
 	}
 	
+	public int getIntervalo() {
+		return intervalo;
+	}
+	
+	public void setIntervalo(int intervalo) {
+		this.intervalo = intervalo;
+	}
+
 	public void registroInicio(Date dataHora) {
 		//regista a data e hora do inicio do trajeto
 		//seta o tipo de trajeto
